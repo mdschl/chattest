@@ -1,1 +1,111 @@
-<script src="https://minnit.chat/js/embed.js" defer></script><minnit-chat data-chatname="https://organizations.minnit.chat/760875649834277/SchoolGroup?embed&nickname=" data-style="width:90%;height:500px;max-height:90vh;"></minnit-chat><p class="powered-by-minnit"><a href="https://minnit.chat" target=_blank>Free embeddable chatroom powered by Minnit Chat</a></p>
+<div class="container">
+<div id="intro" class="hidden">
+<span>Note: You are embedding</span> <span class="chat-name-linked notranslate" translate="no"><a href="https://organizations.minnit.chat/760875649834277/SchoolGroup">SchoolGroup</a></span>. <span>If you want to make a new chat to embed, <a href="https://organizations.minnit.chat/760875649834277/createchat">click here.</a></span><br><br>
+<h3>Select where you would like to embed your Minnit Chat:</h3><br><br>
+<div>
+<strong>A website I completely own and have direct access to its HTML</strong>
+<p>If you have your own website, adding Minnit Chat simply requires a simple copy-and-paste of our script, placed wherever you'd like the chat to appear.</p>
+<p><button class="btn btn-lg btn-primary" onclick="scriptAsk()">Get HTML Code</button></p>
+<hr>
+<strong>A social media site or web service that does not support IFrames -- such as Facebook, X (Twitter), Tumblr, or Email</strong>
+<p>While many sites do not allow other websites to be loaded directly into them, you can share a link. Others can click the link to instantly join your chat.</p>
+<p><button class="btn btn-lg btn-primary" onclick="linksonly()">Get Shareable Link</button></p>
+<hr>
+<strong>A self-hosted Wordpress.org blog</strong>
+<p>If you have Wordpress installed on your own server, you are able to get the Minnit Chat plugin. This plugin will make it easy to add the chat to your entire site, or to a single post or page.</p>
+<p><button class="btn btn-lg btn-primary" onclick="openWPPlugin()">Get Started with Wordpress Plugin</button></p>
+<hr>
+<strong>A website hosted by Wix.com</strong>
+<p>If your website is hosted on Wix, you can follow our simple tutorial to get the chatroom added to your site.</p>
+<p><button class="btn btn-lg btn-primary" onclick="launchWix()">Add Minnit to Wix</button></p>
+</div>
+<br><br>
+<p class="help-block">Having trouble with embedding? Not sure if your website or setup will support Minnit Chat? <a href="https://organizations.minnit.chat/760875649834277/page/minnitsupport" target="_blank">Contact Support</a> and we'll be happy to assist you.</p>
+</div>
+<div id="linksonly" class="hidden">
+<button onclick="goHome()" class="btn btn-go-back">Go Back</button><br><br>
+<span>Many social media sites do not allow the use of external IFrames. This means the only way to share your chat with others is to send them the link directly.</span><br><br>
+<span>The link to</span> <span class="chat-name notranslate" translate="no">SchoolGroup</span> <span>chat is:</span><br><br>
+<h3 id="chat-url"><a href="https://organizations.minnit.chat/760875649834277/SchoolGroup">https://organizations.minnit.chat/760875649834277/SchoolGroup</a></h3>
+</div>
+<div id="wpplugin" class="hidden">
+<button onclick="goHome()" class="btn btn-go-back">Go Back</button><br><br>
+<p>To add your chatroom to your WordPress site, we recommend you add our WordPress plugin.</p>
+<p>This plugin will allow you to add a site-wide icon to the corner of all pages, or allow you to embed the chat directly within a post. Our plugin will also handle zero-click single-sign-on support if you choose to set this up; this way, users who are already registered on your WordPress site will be able to instantly sign in to the chat, without needing to click any URLs or do any additional logging in.</p>
+<p><a href="https://wordpress.org/plugins/minnit-chat/" class="btn btn-primary" target="_blank">Get the Minnit Chat plugin for WordPress</a></p>
+<p>During the setup process, you will be prompted to enter your chat's URL. The URL to enter is:</p>
+<pre class="notranslate" translate="no"><span id="wpchaturl">https://organizations.minnit.chat/760875649834277/c/<span class="chat-name notranslate" translate="no">SchoolGroup</span></span></pre>
+<p><button id="copybtnwp" class="btn btn-default copybtn" data-clipboard-target="#wpchaturl"><i class="fas fa-clipboard" aria-hidden="true"></i>&nbsp;Copy</button></p>
+</div>
+<div id="wixembed" class="hidden">
+<button onclick="goHome()" class="btn btn-go-back">Go Back</button><br><br>
+<p><span>To embed your site onto Wix, <a href="https://support.wix.com/en/article/wix-editor-using-iframes-to-display-visible-content-on-your-site#embedding-an-external-site" target="_blank"><strong>follow this guide to add an external site</strong></a>.</span></p>
+<p>Once you're prompted to enter the website's address, paste the following <strong>exactly</strong>:</p>
+<h3 id="chat-url-wix"><a href="https://organizations.minnit.chat/760875649834277/SchoolGroup?embed">https://organizations.minnit.chat/760875649834277/SchoolGroup?embed</a></h3>
+<p>Your Minnit Chat will instantly work for anyone visiting your Wix website. Happy chatting!</p>
+<p>Any questions, <a href="/support" target="_blank">contact Support</a></p>
+</div>
+<div id="ask-script" class="hidden">
+<button onclick="goHome()" class="btn btn-go-back">Go Back</button><br><br>
+<h2>Are you able to use &lt;script&gt; tags on your website? 🧑‍💻</h2>
+<p><button onclick="launchPreview(true)" class="btn btn-primary col-sm-3">Yes</button></p>
+<p><button onclick="launchPreview()" class="btn btn-primary col-sm-3">No</button></p>
+<p><button onclick="launchPreview()" class="btn btn-primary col-sm-3">Not Sure</button></p>
+</div>
+<div id="embedcodearena" class="">
+<button onclick="goHome()" class="btn btn-go-back">Go Back</button><br><br>
+<div class="alert alert-danger"><strong>Notice:</strong> If your browser blocks third-party cookies, you may be logged out when accessing the chatroom from your website for the first time. Simply re-login through the embedded chatroom — in many cases, your user information will then be stored for future access.</div>
+<strong>Your Embed Code</strong>:
+<br>
+<button id="copybtn" class="btn btn-default copybtn" data-clipboard-target="#iframecode" data-original-title="Copied!" title=""><i class="fas fa-clipboard" aria-hidden="true"></i>&nbsp;Copy</button>
+<pre class="notranslate" translate="no"><span id="iframecode">&lt;script src="https://minnit.chat/js/embed.js" defer&gt;&lt;/script&gt;&lt;minnit-chat data-chatname="https://organizations.minnit.chat/760875649834277/SchoolGroup?embed&amp;nickname=" data-style="width:90%;height:500px;max-height:90vh;"&gt;&lt;/minnit-chat&gt;&lt;p class="powered-by-minnit"&gt;&lt;a href="https://minnit.chat" target=_blank&gt;Free embeddable chatroom powered by Minnit Chat&lt;/a&gt;&lt;/p&gt;</span></pre>
+<p>We also recommend adding the following meta code to your site's &lt;head&gt; tag, if you expect to have users on mobile devices:</p>
+<p></p><pre class="notranslate" translate="no">&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</pre><p></p>
+<form onsubmit="resizeEmbed(); return false;">
+<br>
+<strong>Height:</strong><br><input type="number" class="form-control col-sm-2" onblur="resizeEmbed()" id="height" value="500"><br>
+<span id="width-divs" class="hidden"><strong>Width:</strong><br><input type="number" onblur="resizeEmbed()" class="form-control col-sm-2" id="width" value="1000"><br></span><br>
+<strong><p>Do you want to use Dynamic or Fixed width?</p></strong>
+<select id="dynamicchat" onchange="resizeEmbed()" class="form-control col-sm-5">
+<option value="enable" selected="">Dynamic</option>
+<option value="disable">Fixed</option>
+</select>
+<br>
+<p>Use Dynamic if you plan on making your chatroom be the "centerpiece" of your website, as it will resize to fit any browser, and works best for mobile. This is recommended for most websites.</p>
+<p>Use Fixed if you plan on making your chatroom always be the same size, regardless of the user's screen size or device. This is recommended if you're putting your chat in your sidebar.</p>
+<hr>
+<strong><p>Are you embedding this on a website, or within an app?</p></strong>
+<select id="websiteorapp" onchange="resizeEmbed()" class="form-control col-sm-5">
+<option value="website" selected="">Website</option>
+<option value="app">App</option>
+</select>
+<p>Some features, like Single Sign-On with external providers, do not work when embedded within an app. If "App" is selected, these features, as well as some other login &amp; cookie-related functions, will be modified or disabled.</p>
+<hr>
+<strong>Advanced: Nickname parameter</strong>
+<p>If you have direct access to your website's code, you are able to pre-populate the user's Nickname by amending the iframe code's "nickname" variable. Simply add the desired nickname after the <code>&amp;nickname=</code> portion of the code, and Minnit Chat will apply this nickname to the user if it's their first time using the chat.</p>
+<p>This field is completely optional. If you leave it empty, users will be assigned a random nickname. Alternatively, you may force users to set a nickname manually using the <strong>Force users to set a nickname before they can join</strong> setting found by <a id="force-users-set-nickname-chat-settings-url" target="_blank" href="https://organizations.minnit.chat/760875649834277/page/chatsettings?page=general"><strong>clicking here</strong></a>.</p>
+<hr>
+<select onchange="resizeEmbed()" id="forcemobile" class="form-control col-sm-10">
+<option value="" selected="1">Automatically choose between mobile/web version, based on embed size (Recommended)</option>
+<option value="web">Always use 3-pane desktop view</option>
+<option value="mobile">Always use mobile version</option>
+</select>
+<br>
+<span id="langhtml"><select id="lang" onchange="resizeEmbed()" class="langOpt form-control col-sm-10"><option value="0">Auto-Detect Language for User's Browser (Recommended)&nbsp;&nbsp;&nbsp;&nbsp;</option><option value="en">English</option><option value="ar">العربية</option><option value="az">Azərbaycan</option><option value="sq">Shqip</option><option value="cs">Čeština</option><option value="it">Italiano</option><option value="el">Ελληνικά</option><option value="de">Deutsch</option><option value="da">Dansk</option><option value="es">Español</option><option value="ko">한국어</option><option value="fi">Suomalainen</option><option value="fr">Français</option><option value="he">‫עברית</option><option value="hu">Magyar</option><option value="ja">日本語</option><option value="ms">Melayu</option><option value="ka">ქართული</option><option value="nl">Nederlands</option><option value="ro">Română</option><option value="ru">Русский</option><option value="pt">Português</option><option value="pt-br">Português (Brasil)</option><option value="sr">српски језик</option><option value="sk">Slovenčina</option><option value="sv">Svenska</option><option value="th">ไทย</option><option value="fa">فارسی</option><option value="pl">Polski</option><option value="zh">简体中文</option><option value="zh-cht">繁體中文</option><option value="id">Bahasa</option><option value="tr">Türkçe</option><option value="vi">Tiếng Việt</option><option value="hr">Hrvatski</option></select></span>
+<span id="subroomhtml"><hr><p>Select a Channel that users will connect to:</p> <p><select id="subroom" onchange="resizeEmbed()" class="subroomOpt form-control col-sm-10"><option value="">Main Room</option></select></p></span>
+<br>
+<select onchange="resizeEmbed()" id="theme" class="form-control col-sm-10">
+<option value="">Use Theme Chat Owner Set (Recommended)&nbsp;&nbsp;&nbsp;</option>
+<option value="bright">Always Use Bright Theme</option>
+<option value="gray">Always Use Gray Theme</option>
+<option value="dark">Always Use Dark Theme</option>
+<option value="transparent">Transparent (will disable custom background)</option>
+</select>
+<br>
+<br>
+<button type="submit" class="hidden"></button>
+</form>
+<h3 style="text-align:center;">Preview</h3>
+<div style="text-align:center;" class="chat-example-container" id="embedpreview"><iframe id="iframeWind" allowtransparency="true" style="width:90%;height:500px;border:none;" src="https://organizations.minnit.chat/760875649834277/SchoolGroup?embed"></iframe></div>
+</div>
+</div>
